@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Index from '../views/Index.vue'
 import carousel from './carousel'
+import ImgDetail from '../views/ImgDetail.vue'
 // import { Message } from 'element-ui';
 Vue.use(VueRouter)
 
@@ -16,13 +17,16 @@ const routes = [
     name: 'index',
     component: Index,
     redirect: '/index/home',
-    meta: {
-
-    },
+    meta: {},
     children: [
       ...carousel
     ]
-
+  },
+  {
+    path: '/imgdetail',
+    name: 'imgdetail',
+    component: ImgDetail,
+    meta: {}
   },
 ]
 const router = new VueRouter({

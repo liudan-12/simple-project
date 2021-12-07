@@ -10,5 +10,8 @@ export default {
 };
 </script>
 <style lang="less">
-
+html{
+margin: 0;
+padding: 0;
+}
 </style>

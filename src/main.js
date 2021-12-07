@@ -7,6 +7,8 @@ Vue.config.productionTip = false
 import './plugins/element.js'
 //连接后端
 import axios from "axios"
+
+
 Vue.prototype.$http=axios.create({
   baseURL:' '
 })
